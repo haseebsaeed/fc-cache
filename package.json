@@ -1,0 +1,24 @@
+{
+  "name": "fc-cache",
+  "version": "1.0.0",
+  "description": "MongoDB based cache application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haseebsaeed/fc-cache.git"
+  },
+  "author": "haseeb-saeed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haseebsaeed/fc-cache/issues"
+  },
+  "homepage": "https://github.com/haseebsaeed/fc-cache#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  }
+}
