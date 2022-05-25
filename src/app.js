@@ -3,10 +3,6 @@ require('./init')
 const express = require('express');
 const app = express();
 
-const eventEmitter = require('./utils/event')
-const { DB_CONNECTION_EVENT } = require('./utils/constants')
-
-const logger = require('./logger')
 const cache = require('./routes/cache')
 const errorsMiddlware = require('./middlewares/error')
 
