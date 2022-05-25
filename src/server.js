@@ -1,8 +1,12 @@
 require('./init')
+
 const express = require('express');
 const app = express();
+
 const eventEmitter = require('./utils/event')
 const { DB_CONNECTION_EVENT } = require('./utils/constants')
+
+const logger = require('./logger')
 
 const cache = require('./routes/cache')
 
@@ -16,7 +20,7 @@ app.use('/api/cache', cache)
 PORT = process.env.PORT || 80
 
 eventEmitter.on(DB_CONNECTION_EVENT, async () => {
-    app.listen(PORT, () => console.info(`Listening at port ${PORT}`));
+    app.listen(PORT, () => logger.info(`Listening at port ${PORT}`));
 
 })
 
